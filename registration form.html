@@ -1,0 +1,102 @@
+<!--<!DOCTYPE html>
+<html>
+  <head>
+    <title>Course Enrollment Registration Form</title>
+  </head>
+  <body>
+    <h1>Course Enrollment Registration Form</h1>
+    <form action="#" method="POST">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+      
+      <label for="course">Course:</label>
+      <select id="course" name="course" required>
+        <option value="">Select a course</option>
+        <option value="course1">Course 1</option>
+        <option value="course2">Course 2</option>
+        <option value="course3">Course 3</option>
+      </select><br><br>
+      
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+-->
+
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="regform.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title"> ENROLL COURSE</div>
+    <div class="content">
+      <form >
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required name="name">
+          </div>
+         
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" required name="email">
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required name="phoneno">
+          </div>
+          <div class="input-box">
+            <span class="details">Course</span>
+            <input type="text" placeholder="Enter Course Name" required name="course">
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1" name="gender">
+          <input type="radio" name="gender" id="dot-2" name="gender">
+          <input type="radio" name="gender" id="dot-3" name="gender">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+    
+	<button onclick="myFunction()" >REGISTER</button></div>
+
+	<script>
+		function myFunction() {
+			alert("REGISTERED SUCCESSFULLY!!");
+      window.open("popup.html");
+		}
+	</script>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
